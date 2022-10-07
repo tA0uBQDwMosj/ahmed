@@ -30,8 +30,7 @@ from AnonX.utils.stream.stream import stream
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
-@app.on_message(
-    filters.command(PLAY_COMMAND)
+@app.on_message(filters.command("شغل", [".", ""]) & ~filters.edited)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
