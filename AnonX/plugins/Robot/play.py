@@ -30,11 +30,7 @@ from AnonX.utils.stream.stream import stream
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
-@app.on_message(
-    filters.command(PLAY_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
+@aqq.on_message(command(PLAY_COMMAND)
 )
 @PlayWrapper
 async def play_commnd(
