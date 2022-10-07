@@ -31,7 +31,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
 @app.on_message(
-    commandpro(["/play", "/p", "/ش", "play", "تشغيل", "شغل", "@", "#"])
+    command(["/play", "/p", "/ش", "play", "تشغيل", "شغل", "@", "#"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
