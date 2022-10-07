@@ -30,12 +30,11 @@ from AnonX.utils.stream.stream import stream
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
-@app.on_message(
-    filters.command["play"])
-    & filters.group
-    & ~filters.edited
-    & ~filters.forwarded
-    & ~filters.via_bot
+@app.on_message(filters.command["play"])
+     & filters.group
+     & ~filters.edited
+     & ~filters.forwarded
+     & ~filters.via_bot
 )
 @PlayWrapper
 async def play_commnd(
