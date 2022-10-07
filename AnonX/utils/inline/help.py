@@ -37,7 +37,7 @@ def help_pannel(_, START: Union[bool, int] = None):
                 ),
 
                 InlineKeyboardButton(
-                    text="↯︙اوامر ثانوية .",
+                    text="↯︙اوامر المطور .",
                     callback_data="help_callback hb5",
                 ),
             ],
