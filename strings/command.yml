@@ -9,7 +9,7 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lundlang", "lavdalele", "langlund"]
 
 # Play Commands
-PLAY_COMMAND : ["p", "v", "cp", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["play", "vplay", "cp", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode", "mode"]
 CHANNELPLAY_COMMAND : ["Channel"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
