@@ -30,7 +30,7 @@ from AnonX.utils.stream.stream import stream
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
-@aqq.on_message(command(PLAY_COMMAND)
+@app.on_message(command(PLAY_COMMAND)
 )
 @PlayWrapper
 async def play_commnd(
