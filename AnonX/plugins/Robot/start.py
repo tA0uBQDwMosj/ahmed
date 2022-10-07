@@ -143,10 +143,10 @@ async def start_comm(client, message: Message, _):
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
+                            text="↯︙رابط الفيديو .", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/xl444"
+                            text="↯︙قناة المطور .", url="https://t.me/xl444"
                         ),
                     ],
                 ]
