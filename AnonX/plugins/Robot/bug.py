@@ -13,7 +13,7 @@ from config import (
     OWNER_ID as owner_id,
 )
 
-SUPPORT = "DevilsHeavenMF"
+SUPPORT = "xl444"
 
 def content(msg: Message) -> [None, str]:
     text_to_return = msg.text
@@ -45,7 +45,7 @@ async def bug(_, msg: Message):
     thumb = "https://telegra.ph/file/56d1760224589ee370186.jpg"
     
     bug_report = f"""
-**#ʙᴜɢ :** **@anonymous_was_bot**
+**#ʙᴜɢ :** **@xl444**
 
 **ʀᴇᴩᴏʀᴛᴇᴅ ʙʏ :** **{mention}**
 **ᴜsᴇʀ ɪᴅ :** **{user_id}**
@@ -79,7 +79,7 @@ async def bug(_, msg: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "• ᴄʟᴏsᴇ •", callback_data=f"close_reply")
+                                "• مسح . •", callback_data=f"close_reply")
                         ]
                     ]
                 )
@@ -94,7 +94,7 @@ async def bug(_, msg: Message):
                             InlineKeyboardButton(
                                 "• ᴠɪᴇᴡ ʙᴜɢ •", url=f"{msg.link}"),
                             InlineKeyboardButton(
-                                "• ᴄʟᴏsᴇ •", callback_data="close_send_photo")
+                                "• مسح . •", callback_data="close_send_photo")
                         ]
                     ]
                 )
