@@ -30,10 +30,12 @@ from AnonX.utils.stream.stream import stream
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
-@app.on_message(filters.command("شغل", [".", ""]) & ~filters.edited)
+@app.on_message(
+    commandpro(["/play", "/p", "/ش", "play", "تشغيل", "شغل", "@", "#"])
     & filters.group
     & ~filters.edited
-    & ~BANNED_USERS
+    & ~filters.forwarded
+    & ~filters.via_bot
 )
 @PlayWrapper
 async def play_commnd(
