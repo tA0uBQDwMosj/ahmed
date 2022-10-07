@@ -16,11 +16,8 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="↯︙↯︙الاعدادات .",
+                text="↯︙الاوامر .",
                 callback_data="settings_back_helper",
-            ),
-            InlineKeyboardButton(
-                text="↯︙الاوامر .", callback_data="settings_helper"
             ),
         ],
         [
