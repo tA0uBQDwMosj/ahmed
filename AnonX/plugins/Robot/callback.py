@@ -168,7 +168,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     await auto_clean(popped)
             if not check:
                 await CallbackQuery.edit_message_text(
-                    f"» ᴛʀᴀᴄᴋ sᴋɪᴩᴩᴇᴅ ʙʏ {mention} !"
+                    f"↯︙تم تخطي الاغنية حبي {mention} !"
                 )
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention)
@@ -180,7 +180,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         except:
             try:
                 await CallbackQuery.edit_message_text(
-                    f"» ᴛʀᴀᴄᴋ sᴋɪᴩᴩᴇᴅ ʙʏ {mention} !"
+                    f"↯︙تم تخطي الاغنية حبي {mention} !"
                 )
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention)
