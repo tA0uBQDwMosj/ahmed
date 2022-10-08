@@ -47,16 +47,16 @@ class TeleAPI:
             file_name = file.file_name
             if file_name is None:
                 file_name = (
-                    "ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ"
+                    "↯︙صوت"
                     if audio
-                    else "ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏ"
+                    else "↯︙فيديو"
                 )
 
         except:
             file_name = (
-                "ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ"
+                "↯︙صوت"
                 if audio
-                else "ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏ"
+                else "↯︙فيديو"
             )
         return file_name
 
@@ -119,7 +119,7 @@ class TeleAPI:
                     [
                         [
                             InlineKeyboardButton(
-                                text="↻ ᴄᴀɴᴄᴇʟ ↺",
+                                text="↻ مسح ↺",
                                 callback_data="stop_downloading",
                             ),
                         ]
@@ -137,15 +137,7 @@ class TeleAPI:
                     total_size = convert_bytes(total)
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
-                    text = f"""
-**{MUSIC_BOT_NAME} ᴍᴇᴅɪᴀ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**
-
-**sɪᴢᴇ :** {total_size}
-**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ :** {completed_size} 
-**ᴩᴇʀᴄᴇɴᴛᴀɢᴇ :** {percentage[:5]}%
-
-**sᴩᴇᴇᴅ :** {speed}/s
-**ᴇᴛᴀ :** {eta}"""
+                    text = f"↯︙ابشر عيني جاري التشغيل ."
                     try:
                         await mystic.edit_text(text, reply_markup=upl)
                     except:
@@ -164,7 +156,7 @@ class TeleAPI:
                     progress=progress,
                 )
                 await mystic.edit_text(
-                    "**ғɪʟᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ.\n\n ᴩʀᴏᴄᴇssɪɴɢ...**"
+                    "↯︙جاري تحميل الاغنية"
                 )
                 downloader.pop(message.message_id)
             except:
