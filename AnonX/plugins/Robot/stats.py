@@ -272,7 +272,7 @@ async def overall_stats(client, CallbackQuery, _):
     else:
         ass = "no"
     cm = config.CLEANMODE_DELETE_MINS
-    text = f"""**ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
+    text = f"""**↯︙مرحبا في قسم الاحصائيات:**
 
 ↯︙الوحده المستوردة: {mod}
 ↯︙المجموعات العامة: {served_chats} 
@@ -356,40 +356,40 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f""" **ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
+    text = f""" **↯︙مرحبا في قسم الاحصائيات:**
 
-       <b><u>ʜᴀʀᴅᴡᴀʀᴇ</b><u/>
-**ᴍᴏᴅᴜʟᴇs:** {mod}
-**ᴩʟᴀᴛғᴏʀᴍ:** {sc}
-**ʀᴀᴍ:** {ram}
-**ᴩʜʏsɪᴄᴀʟ ᴄᴏʀᴇs:** {p_core}
-**ᴛᴏᴛᴀʟ ᴄᴏʀᴇs:** {t_core}
-**ᴄᴩᴜ ғʀᴇǫᴜᴇɴᴄʏ:** {cpu_freq}
+       <b><u>↯︙الرام</b><u/>
+**↯︙الوحده المستوردة:** {mod}
+**↯︙البرنامج:** {sc}
+**↯︙الرام:** {ram}
+**↯︙اساس البوت:** {p_core}
+**↯︙النوى:** {t_core}
+**↯︙تردد وحدة المعالجة المركزية:** {cpu_freq}
 
-       <b><u>sᴏғᴛᴡᴀʀᴇ</b><u/>
-**ᴩʏᴛʜᴏɴ :** {pyver.split()[0]}
-**ᴩʏʀᴏɢʀᴀᴍ :** {pyrover}
-**ᴩʏ-ᴛɢᴄᴀʟʟs :** {pytgver}
+       <b><u>↯︙النسخ</b><u/>
+**↯︙نسخة البوت :** {pyver.split()[0]}
+**↯︙نسخة بايروجرام :** {pyrover}
+**↯︙اصدار وحدة التشغيل :** {pytgver}
 
-        <b><u>sᴛᴏʀᴀɢᴇ</b><u/>
-**ᴀᴠᴀɪʟᴀʙʟᴇ:** {total[:4]} GiB
-**ᴜsᴇᴅ:** {used[:4]} GiB
-**ғʀᴇᴇ:** {free[:4]} GiB
+        <b><u>↯︙التخزين</b><u/>
+**↯︙متوفر في التخزين:** {total[:4]} GiB
+**↯︙التخزين المستخدم:** {used[:4]} GiB
+**↯︙التخزين المتبقي:** {free[:4]} GiB
         
-      <b><u>ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛs</b><u/>
-**ᴄʜᴀᴛs:** {served_chats} 
-**ᴜsᴇʀs:** {served_users} 
-**ʙʟᴏᴄᴋᴇᴅ:** {blocked} 
-**sᴜᴅᴏᴇʀs:** {sudoers} 
+      <b><u>↯︙عدد الكروبات</b><u/>
+**↯︙عدد الكروبات:** {served_chats} 
+**↯︙عدد المستخدمين:** {served_users} 
+**↯︙عدد المحظورين:** {blocked} 
+**↯︙عدد المطورين:** {sudoers} 
 
-      <b><u>ᴍᴏɴɢᴏ ᴅᴀᴛᴀʙᴀsᴇ</b><u/>
-**ᴜᴩᴛɪᴍᴇ:** {mongouptime[:4]} Days
-**sɪᴢᴇ:** {datasize[:6]} Mb
-**sᴛᴏʀᴀɢᴇ:** {storage} Mb
-**ᴄᴏʟʟᴇᴄᴛɪᴏɴs:** {collections}
-**ᴋᴇʏs:** {objects}
-**ǫᴜᴇʀɪᴇs:** `{query}`
-**ʙᴏᴛ ǫᴜᴇʀɪᴇs:** `{total_queries} `
+      <b><u>↯︙وقت التشغيل</b><u/>
+**↯︙وقت التشغيل:** {mongouptime[:4]} Days
+**↯︙إجمالي حجم قاعدة البيانات:** {datasize[:6]} Mb
+**↯︙إجمالي مساحة تخزين قاعدة البيانات:** {storage} Mb
+**↯︙إجمالي مجموعات قاعدة البيانات:** {collections}
+**↯︙إجمالي مفاتيح قاعدة البيانات:** {objects}
+**↯︙إجمالي مستخدمين قاعدة البيانات:** `{query}`
+**↯︙إجمالي مستخدمين البوت:** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
