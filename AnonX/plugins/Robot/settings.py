@@ -259,29 +259,29 @@ async def aud_vid_cb(client, CallbackQuery, _):
     except:
         pass
     if command == "LQA":
-        await save_audio_bitrate(CallbackQuery.message.chat.id, "Low")
+        await save_audio_bitrate(CallbackQuery.message.chat.id, "↯︙قليل .")
         buttons = audio_quality_markup(_, low=True)
     if command == "MQA":
         await save_audio_bitrate(
-            CallbackQuery.message.chat.id, "Medium"
+            CallbackQuery.message.chat.id, "↯︙متوسط ."
         )
         buttons = audio_quality_markup(_, medium=True)
     if command == "HQA":
         await save_audio_bitrate(
-            CallbackQuery.message.chat.id, "High"
+            CallbackQuery.message.chat.id, "↯︙عالي ."
         )
         buttons = audio_quality_markup(_, high=True)
     if command == "LQV":
-        await save_video_bitrate(CallbackQuery.message.chat.id, "Low")
+        await save_video_bitrate(CallbackQuery.message.chat.id, "↯︙قليل .")
         buttons = video_quality_markup(_, low=True)
     if command == "MQV":
         await save_video_bitrate(
-            CallbackQuery.message.chat.id, "Medium"
+            CallbackQuery.message.chat.id, "↯︙متوسط ."
         )
         buttons = video_quality_markup(_, medium=True)
     if command == "HQV":
         await save_video_bitrate(
-            CallbackQuery.message.chat.id, "High"
+            CallbackQuery.message.chat.id, "↯︙عالي ."
         )
         buttons = video_quality_markup(_, high=True)
     try:
