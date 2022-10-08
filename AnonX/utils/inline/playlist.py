@@ -5,11 +5,7 @@ def botplaylist_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴩᴇʀsᴏɴᴀʟ",
-                callback_data="get_playlist_playmode",
-            ),
-            InlineKeyboardButton(
-                text="ᴛᴏᴘ 10", callback_data="get_top_playlists"
+                "↯︙المطور .", url=f"https://t.me/xl444"
             ),
         ],
         [
