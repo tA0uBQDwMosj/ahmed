@@ -106,7 +106,7 @@ async def gstats_global(client, message: Message, _):
         vidid,
     ) = await YouTube.details(videoid, True)
     title = title.title()
-    final = f"ᴛᴏᴩ ᴍᴏsᴛ ᴩʟᴀʏᴇᴅ ᴛʀᴀᴄᴋ ᴏɴ {MUSIC_BOT_NAME}\n\n**ᴛɪᴛʟᴇ:** {title}\n\nᴩʟᴀʏᴇᴅ** {co} **ᴛɪᴍᴇs."
+    final = f"↯︙هذه هي الاغنية الاكثر تشغيلاً في {MUSIC_BOT_NAME}\n\n**↯︙العنوان:** {title}\n\n↯︙المجموعات** {co} **↯︙عدد مرات تشغيل الأغنية."
     upl = get_stats_markup(
         _, True if message.from_user.id in SUDOERS else False
     )
@@ -180,9 +180,9 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🍒 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/DevilsHeavenMF) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f" 🫳[التسجيلات الصوتية](https://t.me/xl444) ** ↯︙المجموعات {count} ↯︙عدد مرات تشغيل الأغنية**\n\n"
                 else:
-                    msg += f"📌 [{title}](https://www.youtube.com/watch?v={items}) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f"🫳 [{title}](https://www.youtube.com/watch?v={items}) ** ↯︙المجموعات {count} ↯︙عدد مرات تشغيل الأغنية**\n\n"
 
             temp = (
                 _["gstats_4"].format(
@@ -224,7 +224,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
             except:
                 continue
             limit += 1
-            msg += f"💖 `{extract}` ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs ᴏɴ ʙᴏᴛ.\n\n"
+            msg += f"🥇 `{extract}` ↯︙المجموعات {count} ↯︙عدد مرات تشغيل الأغنية.\n\n"
         temp = (
             _["gstats_5"].format(limit, MUSIC_BOT_NAME)
             if what == "Chats"
@@ -268,27 +268,26 @@ async def overall_stats(client, CallbackQuery, _):
     song = config.SONG_DOWNLOAD_DURATION
     play_duration = config.DURATION_LIMIT_MIN
     if config.AUTO_LEAVING_ASSISTANT == str(True):
-        ass = "ʏᴇs"
+        ass = "yes"
     else:
-        ass = "ɴᴏ"
+        ass = "no"
     cm = config.CLEANMODE_DELETE_MINS
     text = f"""**ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
 
-**ᴍᴏᴅᴜʟᴇs:** {mod}
-**ᴄʜᴀᴛs:** {served_chats} 
-**ᴜsᴇʀs:** {served_users} 
-**ʙʟᴏᴄᴋᴇᴅ:** {blocked} 
-**sᴜᴅᴏᴇʀs:** {sudoers} 
+↯︙الوحده المستوردة: {mod}
+↯︙المجموعات العامة: {served_chats} 
+↯︙عدد المخدومين حالياً: {served_users} 
+↯︙المحظورين: {blocked} 
+↯︙المطورين: {sudoers} 
     
-**ǫᴜᴇʀɪᴇs:** {total_queries} 
-**ᴀssɪsᴛᴀɴᴛs:** {assistant}
-**ᴀss ᴀᴜᴛᴏ ʟᴇᴀᴠᴇ:** {ass}
-**ᴄʟᴇᴀɴᴍᴏᴅᴇ:** {cm} ᴍɪɴᴜᴛᴇs
-
-**ᴅᴜʀᴀᴛɪᴏɴ ʟɪᴍɪᴛ:** {play_duration} ᴍɪɴᴜᴛᴇs
-**ᴅᴏᴡɴʟᴏᴀᴅ ʟɪᴍɪᴛ:** {song} ᴍɪɴᴜᴛᴇs
-**ᴩʟᴀʏʟɪsᴛ ʟɪᴍɪᴛ:** {playlist_limit}
-**ᴩʟᴀʏʟɪsᴛ ᴩʟᴀʏ ʟɪᴍɪᴛ:** {fetch_playlist}"""
+↯︙احصائية عامة: {total_queries} 
+↯︙عدد المساعدين: {assistant}
+↯︙عدد المغادرات للمساعد: {ass}
+↯︙وضع التنظيف كل: {cm} Mins
+↯︙حد مدة تشغيل الأغنية: {play_duration} Mins
+↯︙حد تنزيل الأغنية: {song} Mins
+↯︙حد قائمة تشغيل البوت: {playlist_limit}
+↯︙حد قائمة الانتضار: {fetch_playlist}"""
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(
