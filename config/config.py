@@ -10,9 +10,9 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "8934899"))
 API_HASH = getenv("API_HASH", "bf3e98d2c351e4ad06946b4897374a1e")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "5250991045:AAHhoQvLtIARl30XzhkTb8ZhS-YDuHHaZPA")
+BOT_TOKEN = getenv("BOT_TOKEN", "توكن")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://veez:mega@cluster0.heqnd.mongodb.net/veez?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://music:veez@cluster0.1zrhb.mongodb.net/music?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "90")
@@ -22,12 +22,12 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 )
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001821241935"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "ايدي القناة"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Song")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "اسم البوت")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1854384004").split())
+    map(int, getenv("OWNER_ID", "ايدي المالك").split())
 )
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -85,7 +85,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", "AQATz0fmEOfcuQfZj9LaLX3baYRbZD-U2vRI4Fq0HsCFCZHkyrOsqc8SMmNd34PNveRms_5Dn9wYDssOeki6VlpQfeWPDtCH4lVkON-xtKQU0TCboiVUjfiq0k1HcpA3BmF3dTL6edjjWcZXconWxyAEcT86yD4DxGdcCb5lbX2CRWGefEltJO56xr7nJEVk1BVelKLe1HHckdk2eCI5adnSsAZjFB9EacTK6HX62Onw-TCHkjBZoC9mmPiCgaBFf0gveE92nWLaHDL8HFFErAsKRZMvJUacwvcUw8p3FWPlQyFJfyIuDaDmFzdtbC8QzWdn2itlLCSNGOIjyydIuPmMAAAAAU31dE8A")
+STRING1 = getenv("STRING_SESSION", "بايروجرام")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -107,7 +107,7 @@ START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/b7de33c6ba6c79
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "https://te.legra.ph/file/303a0e1d707b04a28a5ad.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
