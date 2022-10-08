@@ -238,8 +238,9 @@ async def update_(client, message, _):
     ):
         verification = str(checks.count())
     if verification == "":
-        return await response.edit("↯︙البوت محدث أحدث إصدار")
-     ordinal = lambda format:
+        return await response.edit("↯︙البوت محدث أحدث إصدار !")
+    updates = ""
+    ordinal = lambda format: "%d%s" % (
         format,
         "tsnrhtdd"[
             (format // 10 % 10 != 1)
