@@ -3,7 +3,7 @@ PING_COMMAND : ["ping", "alive"]
 START_COMMAND : ["start", "mstart"]
 HELP_COMMAND : ["help"]
 SETTINGS_COMMAND : ["settings", "setting"]
-RELOAD_COMMAND : ["admincache", "reload"]
+RELOAD_COMMAND : ["admin", "reload"]
 GSTATS_COMMAND : ["gstats", "globalstats"]
 STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lundlang", "lavdalele", "langlund"]
@@ -21,7 +21,7 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist", "delplaylist"]
 
 # Tools
 QUEUE_COMMAND : ["queue", "cqueue", "player", "cplayer", "playing", "cplaying"]
-SONG_COMMAND : ["song", "video", "vsong"]
+SONG_COMMAND : ["song", "vid", "vsong"]
 LYRICS_COMMAND : ["lyrics", "lyric"]
 
 
