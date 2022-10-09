@@ -10,7 +10,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "8934899"))
 API_HASH = getenv("API_HASH", "bf3e98d2c351e4ad06946b4897374a1e")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "توكن")
+BOT_TOKEN = getenv("BOT_TOKEN", "5667626321:AAEX0D-u3TbwkndbHtU06NDf8mUnPwDjQYA")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://veez:mega@cluster0.heqnd.mongodb.net/veez?retryWrites=true&w=majority")
 
@@ -22,12 +22,12 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 )
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "ايدي القناة"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001795640748"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "اسم البوت")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Song")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "ايدي المالك").split())
+    map(int, getenv("OWNER_ID", "1486460019").split())
 )
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -43,9 +43,9 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/xl444")
+    "SUPPORT_CHANNEL", "https://t.me/ahmedff2003free")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/vvyvv6")
+    "SUPPORT_GROUP", "https://t.me/ahmedff2003_free")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 
@@ -85,7 +85,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", "بايروجرام")
+STRING1 = getenv("STRING_SESSION", "BABPu6jaHG14xb_mjk7CE8nOSNXCwj3aUgyfZzVd3hjygv7yiWpxz9ffvP12atTHu5BkYXs4TNb8GBsbqEhDn4shMwOD-2wewJi3BkW5BIC0LdWMT2kDY-c2cZnE_O4msM8rzf03j4WN-Xm9dJsmrciRrotSxQcH3yyqPBiAp_mMnQatxmWnt_XT3xaz4Fg72tDupIr_1m3MA8tdDjgJ0Y_KdJuCc507WsIWiYw10qk5pf_42N3pwXWim4EuARsf_yqBy8rASBAHWSRJdbgZlOLhze1QFf7NdjSXwak4YfU0lPsCFZ_MggmJmbGansE1Bkxnz6Sa8QrWEezvmMiPOLCEAAAAAVWS7IsA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
